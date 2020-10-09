@@ -5,10 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './app-material.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { HeaderComponent } from './component/header/header.component';
+import { HomeComponent } from './component/home/home.component';
+import { AdminHomeComponent } from './component/admin-home/admin-home.component';
+import { LoginComponent } from './component/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    AdminHomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
