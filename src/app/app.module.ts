@@ -12,6 +12,8 @@ import { LoginComponent } from './component/login/login.component';
 import { AdditemstoinventoryComponent } from './component/additemstoinventory/additemstoinventory.component';
 import { AdminMenuComponent } from './component/admin-menu/admin-menu.component';
 
+import { ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { AdminMenuComponent } from './component/admin-menu/admin-menu.component'
     BrowserModule,
     AppRoutingModule,
     AppMaterialModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
