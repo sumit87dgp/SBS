@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-additemstoinventory',
@@ -8,10 +8,21 @@ import { FormGroup } from '@angular/forms';
 })
 export class AdditemstoinventoryComponent implements OnInit {
 
-  additemForm:FormGroup;
-  constructor() { }
+  additemForm: FormGroup;
+  constructor(private formBuilder: FormBuilder) {
 
-  ngOnInit() {
   }
 
+  ngOnInit() {
+    this.additemForm = new FormGroup({
+      'itemname': new FormControl(null, [Validators.required]),
+      'itemsubtype': new FormControl(null)
+      // 'merchant': new FormControl(null),
+      // 'boughtondate': new FormControl(null),
+      // 'costprice': new FormControl(null),
+      // 'sellprice': new FormControl(null),
+      // 'quantity': new FormControl(null),
+      // 'unit': new FormControl(null)
+    })
+  }
 }

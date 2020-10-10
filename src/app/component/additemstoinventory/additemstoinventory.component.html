@@ -6,9 +6,16 @@
     <div class="card-form-body">
       <form [formGroup]="additemForm" (ngSubmit)="addItemToList()">
         <div class="d-flex flex-row">
-          <div>
-            
-          </div>
+          <mat-form-field appearance="standard">
+            <mat-label>Item Name</mat-label>
+            <input matInput formControlName="itemname">
+          </mat-form-field>
+        </div>
+        <div class="d-flex flex-row">
+          <mat-form-field appearance="standard">
+            <mat-label>Item Name</mat-label>
+            <input matInput formControlName="itemsubtype">
+          </mat-form-field>
         </div>
       </form>
     </div>
