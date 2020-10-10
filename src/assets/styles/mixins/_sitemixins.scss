@@ -1,0 +1,89 @@
+$optional-black: #000000;
+$optional-button-color: #969090;
+
+$optional-overflow-value:visible;
+
+// Box Dimensions
+
+@mixin box-dimension($width,$height:$width) {
+  width:$width;
+  height: $height;
+}
+
+@mixin box-dimension-maxwidth($width,$height:$width) {
+  max-width: $width;
+  height: $height;
+}
+
+@mixin box-dimension-maxheight($width, $height:$width) {
+  width: $width;
+  max-height: $height;
+}
+
+@mixin box-dimension-maxwidthheight($width,$height:$width) {
+  max-width: $width;
+  max-height: $height;
+}
+
+@mixin simple-border($width: 1px, $style: solid, $color: none, $radius: 0) {
+  border-width: $width;
+  border-color: none;
+  border-style: solid;
+  border-radius: $radius;
+}
+
+
+// Mixin to create a normal button
+@mixin create-button(
+  $x-padding: 0.05rem,
+  $y-padding: 0.1rem,
+  $x-margin: 0,
+  $y-margin: 0,
+  $bg-color: $optional-button-color,
+  $border-color: $optional-black,
+  $border-radius: 0,
+  $border-width:0
+) {
+  @include simple-border($width:$border-width, $color: $border-color, $radius:$border-radius);
+  padding: $y-padding $x-padding;
+  margin: $y-margin $x-margin;
+  background-color: $bg-color;
+}
+
+// Mixin to zoom link
+
+@mixin zoominlink($zoomratio,$hovercolor){
+  a{
+    color: white;
+    &:hover{
+      color: $hovercolor;
+      zoom: $zoomratio;
+    }
+  }
+}
+
+@mixin custom-fixed-heights($height-value){
+  height: $height-value;  
+}
+
+@mixin over-flow-x($over-flow-value:$optional-overflow-value) {
+  overflow-x: $over-flow-value;  
+}
+
+@mixin over-flow-y($over-flow-value:$optional-overflow-value) {
+  overflow-y: $over-flow-value;  
+}
+
+@mixin animation ($keyframename,$duration,$timing-function) {
+  animation-name: $keyframename;
+  -webkit-animation-name: $keyframename;
+  -moz-animation-name: $keyframename;
+
+  animation-duration: $duration;
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  
+  animation-timing-function: $timing-function;
+  -webkit-animation-timing-function: $timing-function;
+  -moz-animation-timing-function: $timing-function;
+}

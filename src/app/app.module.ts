@@ -10,6 +10,7 @@ import { HomeComponent } from './component/home/home.component';
 import { AdminHomeComponent } from './component/admin-home/admin-home.component';
 import { LoginComponent } from './component/login/login.component';
 import { AdditemstoinventoryComponent } from './component/additemstoinventory/additemstoinventory.component';
+import { AdminMenuComponent } from './component/admin-menu/admin-menu.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AdditemstoinventoryComponent } from './component/additemstoinventory/ad
     HomeComponent,
     AdminHomeComponent,
     LoginComponent,
-    AdditemstoinventoryComponent
+    AdditemstoinventoryComponent,
+    AdminMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,61 @@
+$custom-green:rgba(19, 64, 78, 0.753);
+$custom-green-deep:rgba(21, 81, 99, 0.438);
+
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+//$font-family-all: Verdana, Arial, Tahoma, sans-serif;
+$font-family-all: $font-family-sans-serif;
+// $blue-theme-gradient: linear-gradient(110deg, $blue-deep, $blue-deep-hue);
+$blue-theme-gradient: linear-gradient(110deg,  $custom-green,$custom-green-deep);
+$blue-theme-gradient-hover: linear-gradient($custom-green,$custom-green-deep);
+
+// $green-teal-gradient : linear-gradient(150deg,rgb(5, 47, 95), rgba(13, 78, 131, 0.863));
+// $green-teal-gradien-menu : linear-gradient(80deg,rgb(5, 47, 95), rgba(13, 78, 131, 0.863));
+//$green-teal-gradient : linear-gradient(130deg, $black, $deep-green);
+//$green-teal-gradient: linear-gradient(rgb(5, 47, 95) , rgba(13, 78, 131, 0.863));
+//$ashish-color :linear-gradient(rgb(5, 47, 95) , rgba(13, 78, 131, 0.863));
+
+$sidebar-menu-font-size: 17px;
+///////// NAVBAR ////////
+$top-navbar-height: 75px;
+$navbar-light-color: #202339;
+$navbar-font-size: 15px;
+$navbar-icon-font-size: 1.25rem;
+///////// NAVBAR ////////
+// 0b3112
+$sidebar-profilename-fontsize: 17px;
+$sidebar-width-lg: 18rem;
+$sidebar-width-md: 15rem;
+$sidebar-width-sm: 12rem;
+$sidebar-dark-lg: black;
+$sidebar-menu-padding: 16px 35px;
+$nav-link-height: 52px;
+$sidebar-light-menu-color: rgb(255, 255, 255);
+$sidebar-menuitem-bg-hover-color: rgba(19, 64, 78, 0.753);
+$sidebar-light-menu-active-color: #dfe7e0;
+
+$brand-logo-color: white;
+
+$card-spacing-y: 1.875rem;
+$card-padding-y: 1.88rem;
+$card-padding-x: 1.81rem;
+
+$content-bg: #f2f8f9;
+
+$footer-height: 20px;
+$footer-bg: $content-bg;
+$footer-color: color(dark);
+$border-color: #f2f2f2;
+
+$type-1: "Poppins", sans-serif;
+$type-2: $type-1;
+$default-font-size: 12px;
+
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+
+$materialinput-font-size-sm: 0.75rem;
+$materialinput-font-size-md: 1rem;
+$materialinput-font-size-default: 1.25rem;
+$notification-pill-bg-color:maroon;
