@@ -16,13 +16,13 @@ export class AdditemstoinventoryComponent implements OnInit {
   ngOnInit() {
     this.additemForm = new FormGroup({
       'itemname': new FormControl(null, [Validators.required]),
-      'itemsubtype': new FormControl(null)
-      // 'merchant': new FormControl(null),
-      // 'boughtondate': new FormControl(null),
-      // 'costprice': new FormControl(null),
-      // 'sellprice': new FormControl(null),
-      // 'quantity': new FormControl(null),
-      // 'unit': new FormControl(null)
+      'qualityname': new FormControl(null),
+       'merchant': new FormControl(null),
+       'purchasedon': new FormControl(null),
+       'costprice': new FormControl(null),
+       'sellprice': new FormControl(null),
+       'quantity': new FormControl(null),
+       'unit': new FormControl(null)
     })
   }
 }

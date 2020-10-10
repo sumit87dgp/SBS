@@ -5,16 +5,40 @@
     </div>
     <div class="card-form-body">
       <form [formGroup]="additemForm" (ngSubmit)="addItemToList()">
-        <div class="d-flex flex-row">
-          <mat-form-field appearance="standard">
+        <div class="d-flex flex-row justify-content-between">
+          <mat-form-field appearance="standard" class="w-100 px-3">
             <mat-label>Item Name</mat-label>
             <input matInput formControlName="itemname">
           </mat-form-field>
+          <mat-form-field appearance="standard" class="w-100 px-3">
+            <mat-label>Quality Name</mat-label>
+            <input matInput formControlName="qualityname">
+          </mat-form-field>
+          <mat-form-field appearance="standard" class="w-100 px-3">
+            <mat-label>Merchant</mat-label>
+            <input matInput formControlName="merchant">
+          </mat-form-field>
+          <mat-form-field appearance="standard" class="w-100 px-3">
+            <mat-label>Purchased On</mat-label>
+            <input matInput formControlName="purchasedon">
+          </mat-form-field>
         </div>
-        <div class="d-flex flex-row">
-          <mat-form-field appearance="standard">
-            <mat-label>Item Name</mat-label>
-            <input matInput formControlName="itemsubtype">
+        <div class="d-flex flex-row justify-content-between">
+          <mat-form-field appearance="standard" class="w-100 px-3">
+            <mat-label>Cost Price</mat-label>
+            <input matInput formControlName="costprice">
+          </mat-form-field>
+          <mat-form-field appearance="standard" class="w-100 px-3">
+            <mat-label>Selling Price</mat-label>
+            <input matInput formControlName="sellprice">
+          </mat-form-field>
+          <mat-form-field appearance="standard" class="w-100 px-3">
+            <mat-label>Quantity</mat-label>
+            <input matInput formControlName="quantity">
+          </mat-form-field>
+          <mat-form-field appearance="standard" class="w-100 px-3">
+            <mat-label>Unit</mat-label>
+            <input matInput formControlName="unit">
           </mat-form-field>
         </div>
       </form>
